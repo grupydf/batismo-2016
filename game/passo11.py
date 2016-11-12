@@ -50,7 +50,7 @@ while not acabou:
     pygame.draw.rect(tela, [255,255,255], jogador)
 
     # define a bola
-    bola = pygame.Rect(bola_x, bola_y, 15, 15)
+    bola = pygame.Rect(bola_x, bola_y, 64, 64)
     # desenha a bola
     # pygame.draw.rect(tela, [255,255,255], bola)
     tela.blit(foto, bola)
@@ -89,9 +89,9 @@ while not acabou:
         # Apertar uma tecla
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                velocidade_jogador = -5 
+                velocidade_jogador = -5
             if event.key == pygame.K_RIGHT:
-                velocidade_jogador = 5 
+                velocidade_jogador = 5
             if event.key == pygame.K_ESCAPE:
                 acabou = True
         if event.type == pygame.KEYUP:
